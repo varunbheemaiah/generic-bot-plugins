@@ -9,7 +9,7 @@ function GetRandomInsult(id, msg)
     -- Get ID of person to insult
     -- Insult the sender unless they have tagged someone
     victim = id
-    if msgTable[1] ~= nil then
+    if msgTable[1] ~= "" then
         victim = tagToId(msgTable[1])
     end
 
@@ -24,7 +24,7 @@ function GetRandomCompliment(id, msg)
     -- Get ID of person to insult
     -- Insult the sender unless they have tagged someone
     victim = id
-    if msgTable[1] ~= nil then
+    if msgTable[1] ~= "" then
         victim = tagToId(msgTable[1])
     end
 
